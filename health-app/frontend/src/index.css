@@ -1,0 +1,148 @@
+/* ================= BODY ================= */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: white;
+  padding: 30px;
+  width: 340px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* ================= INPUTS ================= */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* ================= LINKS ================= */
+.link {
+  color: blue;
+  cursor: pointer;
+}
+
+/* ================= DASHBOARD LAYOUT ================= */
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  margin: 15px 0;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #4facfe;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ================= CARDS ================= */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  width: 200px;
+  transition: 0.3s;
+}
+
+.card-box:hover {
+  transform: scale(1.05);
+}
+
+/* ================= HEADER ================= */
+.header {
+  margin-bottom: 30px;
+}
+
+/* ================= TIME SLOTS ================= */
+.slots button {
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #2563eb;
+  background: white;
+  color: #2563eb;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.slots button:hover:enabled {
+  background: #2563eb;
+  color: white;
+}
+
+button:disabled {
+  background: gray;
+  color: #eee;
+  cursor: not-allowed;
+}
