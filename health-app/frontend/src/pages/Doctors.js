@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-function Doctors() {
-  const [doctors, setDoctors] = useState([]);
-  const [filter, setFilter] = useState("");
 
   useEffect(() => {
     axios.get("http://localhost:5000/api/users/doctors")
